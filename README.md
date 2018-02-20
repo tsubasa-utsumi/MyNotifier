@@ -10,6 +10,7 @@ status = kindleCheck.getSaleInfo(URL)
 if status >= 30:
   tweet.tweet("@自分 セール中だぞ！ " + URL)
 ```
+一応サンプル : [sample.py](sample.py)
 
 # キンドルのセール情報取得
 - 30%以上をセールと見なしてます
