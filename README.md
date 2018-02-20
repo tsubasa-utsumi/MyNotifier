@@ -1,5 +1,15 @@
-# MyNotifier
-ツイッターで色々通知してくれるようになるはず。
+# 特定のマンガのキンドル版のセール情報を取得する
+```
+#coding: UTF-8
+import kindleCheck
+import tweet
+
+URL = "監視したい本のURL"
+status = kindleCheck.getSaleInfo(URL)
+
+if status >= 30:
+  tweet.tweet("@自分 セール中だぞ！ " + URL)
+```
 
 # キンドルのセール情報取得
 - 30%以上をセールと見なしてます
