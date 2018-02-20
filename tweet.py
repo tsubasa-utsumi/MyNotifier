@@ -1,9 +1,12 @@
 import configparser
 import twitter
+import os
 
 def tweet(message):
   conf = configparser.ConfigParser()
-  conf.read('config')
+  base = os.path.dirname(os.path.abspath(__file__))
+  name = os.path.normpath(os.path.join(base, 'config'))
+  conf.read(name)
   tconf = conf['Twitter']
 
   auth = twitter.OAuth(
