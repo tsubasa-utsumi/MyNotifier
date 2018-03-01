@@ -39,4 +39,4 @@ tweet.tweet("テストだオラァ")
 
 ## 呟くための準備
 - `./config` にツイッターのAPIキー等を設定する必要がある
-  - configSAMPLEを見て設定すること
+  - [configSAMPLE](configSAMPLE)を見て設定すること
