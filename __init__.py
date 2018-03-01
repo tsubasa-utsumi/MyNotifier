@@ -1,2 +1,2 @@
-from . import kindleCheck
-from . import tweet
+from module import kindleCheck
+from module import tweet
