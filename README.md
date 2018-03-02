@@ -28,7 +28,9 @@ kindleCheck.getSaleInfo(URL)
 |-1|割引が無いとかなんか失敗したとか|
 
 # ツイッターで呟く
-[tweet.py](tweet.py) を使って下さい。
+[tweet.py](tweet.py) を使って下さい。  
+使ってるモジュールは [Python Twitter Tools](https://github.com/sixohsix/twitter)です
+
 ## 使い方
 ```
 #coding: UTF-8
