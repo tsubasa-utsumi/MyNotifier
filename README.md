@@ -29,7 +29,7 @@ kindleCheck.getSaleInfo(URL)
 
 # ツイッターで呟く
 [tweet.py](tweet.py) を使って下さい。  
-使ってるモジュールは [Python Twitter Tools](https://github.com/sixohsix/twitter)です
+使ってるライブラリは [Python Twitter Tools](https://github.com/sixohsix/twitter)です
 
 ## 使い方
 ```
