@@ -40,7 +40,7 @@ class Yam:
     for user in kindle:
       if user["name"] == name:
         adduser = user
-        break;
+        break
 
     if adduser is None:
       adduser = {}
@@ -51,4 +51,24 @@ class Yam:
     adduser["url"].append([url, sale])
     self.__Write(self.obj)
 
-    
+  def Delete(self, name, url):
+    if self.obj is None:
+      self.obj = self.__Read()
+
+    kindle = self.obj["kindle"]
+    urlList = None
+    for user in kindle:
+      if user["name"] == name:
+        urlList = user["url"]
+        break
+
+    delUrl = None
+    if urlList is not None:
+      for item in urlList:
+        if item[0] == url:
+          delUrl = item
+          break
+      if delUrl is not None:
+        urlList.remove(delUrl)
+
+    self.__Write(self.obj)
